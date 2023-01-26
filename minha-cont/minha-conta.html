@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Minha conta</title>
+</head>
+<body>
+    <main>
+        <div class="menu-container">
+            <span class="material-symbols-outlined" onclick="clique()">
+                menu
+            </span>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Adicionar imóvel</a></li>
+                        <li><a href="#">Meus imóveis</a></li>
+                        <li><a href="#">Meu mapa</a></li>
+                        <li><a href="#">Minha conta</a></li>
+                        <li><a href="#">Administrativo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h1>Minha conta</h1>
+            </div>
+
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+
+            <div class="formulario">
+                <form action="#">
+                    <div class="dados">
+                        <div>
+                            <label for="nome">Nome do negócio*</label>
+                            <input type="text" id="nome" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="zap">Whatsapp*</label>
+                            <input type="text" id="zap" required>
+                        </div>
+                        <div>
+                            <label for="plano">Plano*</label>
+                            <select name="plano" id="plano">
+                                <option value="gratis">Grátis</option>
+                                <option value="premiun">Premiun</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="button" value="Mudar plano" class="botao1">
+                        </div>
+                        <div>
+                            <input type="button" value="Excluir conta" class="botao2">
+                        </div>
+                    </div>
+                    <input type="button" value="Salvar" id="btn-final">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

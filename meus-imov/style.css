@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    display: flex;
+}
+
+.menu{
+    padding: 50px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: rgb(67, 33, 194);
+}
+
+@media(max-width: 720px){
+    .material-symbols-outlined{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+select{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+@media(max-width: 720px){
+    .dados div{
+        width: 100%;
+    }
+
+    main{
+        display: block;
+    }
+
+    .menu{
+        display: flex;
+        transition: 0.5s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu.on{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+.titulo{
+    margin-top: 67px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+#btn-final{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 210px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 37px;
+}
+
+table{
+    margin-top: 20px;
+}
+
+td, th{
+    padding: 20px;
+}
+
+#lixeira {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }

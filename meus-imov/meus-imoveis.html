@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Meus imoveis</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="menu-container">
+                <span class="material-symbols-outlined" onclick="clique()" id="hb">
+                    menu
+                </span>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Adicionar imóvel</a></li>
+                            <li><a href="#">Meus imóveis</a></li>
+                            <li><a href="#">Meu mapa</a></li>
+                            <li><a href="#">Minha conta</a></li>
+                            <li><a href="#">Administrativo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="titulo">
+                    <h1>Minha conta</h1>
+                    
+                </div>
+                <div class="logo">
+                    <img src="" alt="">
+                </div>
+                <div class="formulario">
+                    <form action="#">
+                        <div class="dados">
+                            <div>
+                                <label for="categoria">Categoria*</label>
+                                <select name="categoria" id="categoria">
+                                    <option value="residencial">Residencial</option>
+                                    <option value="chocolate">Chocolate</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="tipo">Tipo*</label>
+                                <select name="tipo" id="tipo">
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Kichenette">Kichenette</option>
+                                    <option value="Flat">Flat</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="objetivo">Objetivo*</label>
+                                <select name="objetivo" id="objetivo">
+                                    <option value="Alugar">Alugar</option>
+                                    <option value="Vender">Vender</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="button" value="Adicionar Novo" id="btn-final">
+                    </form>
+                </div>
+                
+                <div class="tabela">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Endereço</th>
+                            <th>Quartos</th>
+                            <th>Banheiros</th>
+                            <th>Vagas</th>
+                            <th>m²</th>
+                        </tr>
+                        <tr>
+                            <td>Casa Azul</td>
+                            <td>Rua Eugênio Bayer 559, Centro</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>92</td>
+                            <td><span class="material-symbols-outlined" id="lixeira">
+                                edit
+                                </span></td>
+                            <td><span class="material-symbols-outlined" id="lixeira">
+                                delete
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>Casa Verde</td>
+                            <td>Rua Eugênio Bayer 559, Centro</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>112</td>
+                            <td><span class="material-symbols-outlined" id="lixeira">
+                                edit
+                                </span></td>
+                            <td><span class="material-symbols-outlined" id="lixeira">
+                                delete
+                                </span></td>
+                        </tr>
+                    </table>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
