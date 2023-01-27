@@ -167,4 +167,9 @@ input:hover{
     height: 50px;
     font-size: 17px;
     margin-top: 50px;
+    cursor: pointer;
+}
+
+#btn-final:hover{
+    background-color: rgb(73, 73, 73);
 }
