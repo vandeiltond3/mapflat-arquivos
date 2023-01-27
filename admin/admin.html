@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Administrativo</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="menu-container">
+                <span class="material-symbols-outlined" onclick="clique()" id="hb">
+                    menu
+                </span>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Adicionar imóvel</a></li>
+                            <li><a href="#">Meus imóveis</a></li>
+                            <li><a href="#">Meu mapa</a></li>
+                            <li><a href="#">Minha conta</a></li>
+                            <li><a href="#">Administrativo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="formulario">
+                    <form action="#">
+                        <div class="dados">
+                            <div>
+                                <label for="status">Status*</label>
+                                <select name="status" id="status">
+                                    <option value="ativo">Ativo</option>
+                                    <option value="pendente">Pendente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="tabela">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Plano</th>
+                            <th>E-mail</th>
+                            <th>API</th>
+                            <th>Código</th>
+                            <th>Mapa</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Imobiliaria 1</td>
+                            <td>Grátis</td>
+                            <td>adriano.614@gmail.com</td>
+                            <td><button>Copiar</button></td>
+                            <td><button>Editar</button></td>
+                            <td><button>Abrir</button></td>
+                            <td><button>Pendente</button></td>
+                        </tr>
+                        <tr>
+                            <td>Imobiliaria 2</td>
+                            <td>Grátis</td>
+                            <td>adriano.614@gmail.com</td>
+                            <td><button>Copiar</button></td>
+                            <td><button>Editar</button></td>
+                            <td><button>Abrir</button></td>
+                            <td><button>Ativo</button></td>
+                        </tr>
+                    </table>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -61,6 +61,7 @@ select{
     height: 40px;
     padding: 10px;
     border: 2px solid gray;
+    cursor: pointer;
 }
 
 @media(max-width: 720px){
