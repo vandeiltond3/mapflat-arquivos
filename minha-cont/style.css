@@ -48,6 +48,7 @@ li{
     .material-symbols-outlined{
         display: block;
         cursor: pointer;
+        margin: 15px;
     }
 }
 

@@ -19,4 +19,10 @@ function clique(){
 
     menu.classList.toggle('on', show)
     show = !show;
+
+    if(tog.innerText == "menu"){
+        tog.innerText = "close"
+    }else{
+        tog.innerText = "menu";
+    }
 }

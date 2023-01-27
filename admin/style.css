@@ -2,12 +2,17 @@
 
 *{
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 section{
     display: flex;
+}
+
+.container{
+    width: 75vw;
 }
 
 .menu{
@@ -44,10 +49,32 @@ li{
     color: rgb(67, 33, 194);
 }
 
-@media(max-width: 720px){
-    .material-symbols-outlined{
+@media(max-width: 920px){
+    section{
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 920px){
+
+    .container{
+        width: 100vw;
+    }
+
+    #hb{
         display: block;
         cursor: pointer;
+        margin: 20px;
+    }
+
+    .tabela{
+        overflow-x: scroll;
     }
 }
 
@@ -64,9 +91,9 @@ select{
     cursor: pointer;
 }
 
-@media(max-width: 720px){
-    .dados div{
-        width: 100%;
+@media(max-width: 920px){
+    section{
+        display: block;
     }
 
     main{
@@ -101,14 +128,8 @@ select{
     font-size: 0.8em;
 }
 
-form{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .dados{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .dados div{
@@ -119,8 +140,14 @@ form{
     min-width: 250px;
 }
 
+.tabela{
+    overflow-x: auto;
+    width: 100%;
+}
+
 table{
     margin-top: 20px;
+    display: flex;
 }
 
 td, th{

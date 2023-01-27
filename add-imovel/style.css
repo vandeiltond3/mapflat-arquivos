@@ -105,6 +105,7 @@ form > h2{
         display: block;
         grid-area: tog;
         cursor: pointer;
+        margin: 15px;
     }
 }
 
