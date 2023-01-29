@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+section{
     display: flex;
 }
 
@@ -68,7 +68,7 @@ input, select{
         width: 100%;
     }
 
-    main{
+    section{
         display: block;
     }
 
