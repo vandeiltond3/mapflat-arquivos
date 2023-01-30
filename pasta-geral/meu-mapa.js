@@ -1,5 +1,5 @@
 tog = document.querySelector('.material-symbols-outlined')
-menu = document.querySelector('.menu')
+menu = document.querySelector('.menu-map')
 
 /*function clique(){
     if(menu.style.display == "block"){

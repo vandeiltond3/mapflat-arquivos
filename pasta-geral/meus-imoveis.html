@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-geral.css">
     <title>Meus imoveis</title>
 </head>
 <body>
-    <main>
-        <section>
+    <main class="main-imove">
+        <section class="sessao-imove">
             <div class="menu-container">
                 <span class="material-symbols-outlined" onclick="clique()" id="hb">
                     menu
                 </span>
-                <div class="menu">
+                <div class="menu-imove">
                     <nav>
                         <ul>
                             <li><a href="#">Adicionar imóvel</a></li>
@@ -31,15 +31,15 @@
             </div>
             <div class="container">
                 <div class="titulo">
-                    <h1>Minha conta</h1>
+                    <h1>Meus Imóveis</h1>
                     
                 </div>
                 <div class="logo">
                     <img src="" alt="">
                 </div>
                 <div class="formulario">
-                    <form action="#">
-                        <div class="dados">
+                    <form class="form-imoveis" action="#">
+                        <div class="dados-imove">
                             <div>
                                 <label for="categoria">Categoria*</label>
                                 <select name="categoria" id="categoria">
@@ -64,12 +64,12 @@
                                 </select>
                             </div>
                         </div>
-                        <input type="button" value="Adicionar Novo" id="btn-final">
+                        <input type="button" value="Adicionar Novo" id="btn-final-imove">
                     </form>
                 </div>
                 
-                <div class="tabela">
-                    <table>
+                <div class="tabela-imove">
+                    <table class="table-imove">
                         <tr>
                             <th>Nome</th>
                             <th>Endereço</th>
@@ -109,6 +109,6 @@
                     </table>
             </div>
     </main>
-    <script src="script.js"></script>
+    <script src="meus-imoveis.js"></script>
 </body>
 </html>

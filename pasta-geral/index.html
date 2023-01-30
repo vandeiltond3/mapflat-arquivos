@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-geral.css">
     <title>MAPFLAT</title>
 </head>
 <body>
     <main>
         <section>
-            <div class="container">
-                <span class="material-symbols-outlined" onclick="clique()">
+            <div class="container-addimvel">
+                <span class="material-symbols-outlined" id="hb-addimvel" onclick="clique()">
                     menu
                 </span>
-                <div class="menu">
+                <div class="menu-addimvel">
                     <nav>
                         <ul>
                             <li><a href="#">Adicionar imóvel</a></li>
@@ -26,11 +26,11 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="titulo"><h1>Adicionar imóvel</h1></div>
-                <div class="formulario">
-                    <form action="#" method="post" enctype="multipart/form-data">
+                <div class="titulo-addimvel"><h1>Adicionar imóvel</h1></div>
+                <div class="formulario-addimvel">
+                    <form class="form-adm" action="#" method="post" enctype="multipart/form-data">
                         <h2>Dados do imóvel</h2>
-                        <div class="dados-do-imovel">
+                        <div class="dados-do-imovel-addimvel">
                             <div>
                                 <label for="nome">Nome do imóvel*</label>
                                 <input type="text" id="nome" required>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <h2>Endereço do imóvel</h2>
-                        <div class="dados-do-imovel">
+                        <div class="dados-do-imovel-addimvel">
                             <div>
                                 <label for="categoria">Categoria*</label>
                                 <select name="categoria" id="categoria" required>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <h2>Fotos do imóvel</h2>
-                        <div class="dados-do-imovel">
+                        <div class="dados-do-imovel-addimvel">
                             <div>
                                 <input type="file" name="pic" id="pic3">
                             </div>

@@ -1,0 +1,831 @@
+/* pagina Adicionar Imóvel */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-addimvel{
+    display: grid;
+    max-width: 1200px;
+    grid-template-areas: "menu title"
+                        "menu form"
+    
+}
+
+
+
+/* menu css*/
+
+
+
+.menu-addimvel{
+    grid-area: menu;
+    padding: 50px;
+}
+
+#hb-addimvel {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb-addimvel{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-addimvel a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-addimvel a:hover{
+    color: rgb(67, 33, 194);
+}
+
+.titulo-addimvel{
+    grid-area: title;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+
+
+/* fomrmulário css*/
+
+
+
+.formulario-addimvel{
+    grid-area: form;
+    margin-right: 50px;
+}
+
+.form-adm > h2{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.dados-do-imovel-addimvel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media(max-width: 1120px){
+    .dados-do-imovel-addimvel{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-addimvel{
+        padding-left: 10px;
+    }
+
+    .formulario-addimvel{
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 720px){
+    .dados-do-imovel-addimvel{
+        grid-template-columns: 1fr;
+    }
+
+    .container-addimvel{
+        
+        grid-template-areas:"tog tog" 
+                            "menu menu"
+                            "title title"
+                            "form form";
+    }
+
+    #hb-addimvel{
+        display: block;
+        grid-area: tog;
+        cursor: pointer;
+        margin: 15px;
+    }
+}
+
+.dados-do-imovel-addimvel div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+input, select{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+@media(max-width: 720px){
+    .dados-do-imovel-addimvel div{
+        width: 100%;
+    }
+
+    .menu-addimvel{
+        display: block;
+        transition: 0.5s;
+        opacity: 0;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin: 0 auto;
+    }
+
+    .menu-addimvel.on{
+        height: 100vh;
+        visibility: visible;
+        opacity: 1;
+        margin: 0 auto;
+    }
+}
+
+input:hover{
+    background-color: rgb(232, 250, 255);
+}
+
+#fotos{
+    height: 40px;
+}
+
+#bt-final{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 250px;
+    margin-bottom: 200px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#btn-final:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+
+
+
+
+
+/* pagina Administrativo */
+
+
+
+
+
+
+
+.sessao-adm{
+    display: flex;
+}
+
+
+/* menu css */
+
+
+.menu-adm{
+    padding: 50px;
+}
+
+#hb-adm {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb-adm{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-adm a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-amd a:hover{
+    color: rgb(67, 33, 194);
+}
+
+
+/* responsivo */
+
+@media(max-width: 920px){
+    .sessao-adm{
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .container-adm{
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 920px){
+
+    .container-adm{
+        width: 100vw;
+    }
+
+    #hb-adm{
+        display: block;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    .tabela-adm{
+        overflow-x: scroll;
+    }
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+select{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+@media(max-width: 920px){
+    .sessao-adm{
+        display: block;
+    }
+
+    .main-adm{
+        display: block;
+    }
+
+    .menu-adm{
+        display: flex;
+        transition: 0.5s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu-adm.on{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+.container-adm{
+    margin-top: 46px;
+}
+
+.dados-adm{
+    display: flex;
+}
+
+.dados-adm div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+.tabela-adm{
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-adm{
+    margin-top: 20px;
+    display: flex;
+}
+
+td, th{
+    padding: 20px;
+}
+
+button{
+    background-color: #fff;
+    padding: 5px;
+    width: 80px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* pagina Meu Map */
+
+
+
+.sessao-map{
+    display: flex;
+}
+
+.container-map{
+    max-width: 1200px;
+}
+
+
+/* menu css */
+
+
+.menu-map{
+    padding: 50px;
+}
+
+#hb-map {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb-map{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-map a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-map a:hover{
+    color: rgb(67, 33, 194);
+}
+
+/* responsivo */
+
+@media(max-width: 720px){
+    #hb-map{
+        display: block;
+        cursor: pointer;
+        margin: 20px;
+    }
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.input-map{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+#link, #codigo{
+    width: 100%;
+    min-width: 250px;
+}
+
+@media(max-width: 720px){
+    .dados-map div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessao-map{
+        display: block;
+    }
+
+    .menu-map{
+        display: flex;
+        transition: 0.5s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu-map.on{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+
+.titulo{
+    margin-top: 67px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+.dados-map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dados-map div{
+    display: flex;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+}
+
+input:hover{
+    background-color: rgb(232, 250, 255);
+}
+
+.conjunto1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conjunto2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mapa-img{
+    border: 1px solid gray;
+    height: 500px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* pagina Meus imoveis */
+
+
+
+
+.sessao-imove{
+    display: flex;
+}
+
+
+/* menu css */
+
+.menu-imove{
+    padding: 50px;
+}
+
+#hb {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-imove a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-imove a:hover{
+    color: rgb(67, 33, 194);
+}
+
+/* responsivo css */
+
+@media(max-width: 720px){
+    #hb{
+        display: block;
+        cursor: pointer;
+        margin: 15px;
+    }
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+select{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+@media(max-width: 720px){
+    .dados-imove div{
+        width: 100%;
+    }
+
+    .sessao-imove{
+        display: block;
+    }
+    
+
+    .menu-imove{
+        display: flex;
+        transition: 0.5s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu-imove.on{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+.titulo{
+    margin-top: 67px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+.form-imoveis{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados-imove{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados-imove div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+#btn-final-imove{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 210px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 47px;
+    cursor: pointer;
+}
+
+#btn-final-imove:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+.table-imove{
+    margin-top: 20px;
+}
+
+td, th{
+    padding: 20px;
+}
+
+#lixeira {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+
+
+
+  /* pagina Minha Conta */
+
+
+
+  .sessao-conta{
+    display: flex;
+  }
+
+.container-conta{
+    max-width: 1200px;
+}
+
+/* menu css */
+
+.menu-conta{
+    padding: 50px;
+}
+
+#hb-conta {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#hb-conta{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-conta a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-conta a:hover{
+    color: rgb(67, 33, 194);
+}
+
+/* responsivo css */
+
+@media(max-width: 720px){
+    #hb-conta{
+        display: block;
+        cursor: pointer;
+        margin: 15px;
+    }
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+input, select{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+@media(max-width: 720px){
+    .dados-conta div{
+        width: 100%;
+    }
+
+    .sessao-conta{
+        display: block;
+    }
+
+    .menu-conta{
+        display: flex;
+        transition: 0.5s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .menu-conta.on{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        visibility: visible;
+    }
+}
+
+.titulo{
+    margin-top: 67px;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+.dados-conta{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dados-conta div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+input:hover{
+    background-color: rgb(232, 250, 255);
+}
+
+.form-conta{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botao1{
+    color: #fff;
+    background-color: blue;
+    border: none;
+    height: 40px;
+    font-size: 17px;
+}
+
+.botao2{
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    height: 40px;
+    font-size: 17px;
+}
+
+#btn-final{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 210px;
+    margin-bottom: 200px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#btn-final:hover{
+    background-color: rgb(73, 73, 73);
+}

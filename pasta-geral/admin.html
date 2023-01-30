@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css-geral.css">
     <title>Administrativo</title>
 </head>
 <body>
-    <main>
-        <section>
+    <main class="main-adm">
+        <section class="sessao-adm">
             <div class="menu-container">
-                <span class="material-symbols-outlined" onclick="clique()" id="hb">
+                <span class="material-symbols-outlined" onclick="clique()" id="hb-adm">
                     menu
                 </span>
-                <div class="menu">
+                <div class="menu-adm">
                     <nav>
                         <ul>
                             <li><a href="#">Adicionar imóvel</a></li>
@@ -29,8 +29,8 @@
                     </nav>
                 </div>
             </div>
-            <div class="container">
-                <div class="dados">
+            <div class="container-adm">
+                <div class="dados-adm">
                     <div>
                         <label for="status">Status*</label>
                         <select name="status" id="status">
@@ -39,8 +39,8 @@
                         </select>
                     </div>
                 </div>
-                <div class="tabela">
-                    <table>
+                <div class="tabela-adm">
+                    <table class="table-adm">
                         <tr>
                             <th>Nome</th>
                             <th>Plano</th>
@@ -73,6 +73,6 @@
             </div>    
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="admin.js"></script>
 </body>
 </html>
