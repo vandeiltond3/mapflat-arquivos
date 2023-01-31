@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <h2>Endereço do imóvel</h2>
-                        <div class="dados-do-imovel-addimvel">
+                        <div class="endereco-do-imovel-addimvel">
                             <div>
                                 <label for="categoria">Categoria*</label>
                                 <select name="categoria" id="categoria" required>
@@ -136,20 +136,23 @@
                             </div>
                         </div>
                         <h2>Fotos do imóvel</h2>
-                        <div class="dados-do-imovel-addimvel">
-                            <div>
-                                <input type="file" name="pic" id="pic3">
+                        <div class="fotos-do-imovel-addimvel">
+                            <div class="file">
+                                <label for="pic3" id="pic-c">Enviar Foto +</label>
+                                <input type="file" name="pic3" id="pic3">
                             </div>
-                            <div>
-                                <input type="file" name="pic" id="pic2">
+                            <div class="file">
+                                <label for="pic2" id="pic-b">Eviar Foto +</label>
+                                <input type="file" name="pic2" id="pic2">
                             </div>
-                            <div>
+                            <div class="file">
+                                <label for="pic" id="pic-a">Enviar foto +</label>
                                 <input type="file" name="pic" id="pic" accept="image/*">
                             </div>
                         </div>
                         <h2>Descrição do imóvel</h2>
                         <div>
-                            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Limite de 50 palavras" style="width: 100%; padding: 10px;"></textarea>
+                            <textarea name="descricao" id="descricao" maxlength="400" rows="10" placeholder="Limite de 50 palavras" style="width: 94%; padding: 10px;"></textarea>
                         </div>
                         <input type="submit" value="Adicionar" id="bt-final">
                     </form>

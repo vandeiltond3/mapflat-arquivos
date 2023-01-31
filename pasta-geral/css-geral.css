@@ -79,6 +79,7 @@ li{
     font-size: 1.2em;
     font-weight: 400;
     margin-left: 20px;
+    margin-top: 40px;
 }
 
 .dados-do-imovel-addimvel{
@@ -87,8 +88,28 @@ li{
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+.endereco-do-imovel-addimvel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.fotos-do-imovel-addimvel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
 @media(max-width: 1120px){
     .dados-do-imovel-addimvel{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fotos-do-imovel-addimvel{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .endereco-do-imovel-addimvel{
         grid-template-columns: 1fr 1fr;
     }
 
@@ -103,6 +124,14 @@ li{
 
 @media(max-width: 720px){
     .dados-do-imovel-addimvel{
+        grid-template-columns: 1fr;
+    }
+
+    .endereco-do-imovel-addimvel{
+        grid-template-columns: 1fr;
+    }
+
+    .fotos-do-imovel-addimvel{
         grid-template-columns: 1fr;
     }
 
@@ -123,6 +152,22 @@ li{
 }
 
 .dados-do-imovel-addimvel div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+.endereco-do-imovel-addimvel div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(88, 88, 88);
+    min-width: 250px;
+}
+
+.fotos-do-imovel-addimvel div{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -173,6 +218,27 @@ input:hover{
     height: 40px;
 }
 
+#pic-a, #pic-b, #pic-c{
+    height: 40px;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file label:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+#pic, #pic2, #pic3{
+    display: none;
+}
+
+#descricao{
+    margin-left: 20px;
+}
+
 #bt-final{
     color: #fff;
     background-color: #000;
@@ -182,11 +248,12 @@ input:hover{
     height: 50px;
     font-size: 17px;
     margin-top: 50px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
-#btn-final:hover{
-    background-color: rgb(73, 73, 73);
+#bt-final:hover{
+    background-color: rgb(36, 36, 36);
 }
 
 
