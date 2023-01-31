@@ -413,7 +413,7 @@ td, th{
     padding: 20px;
 }
 
-button{
+.button-adm{
     background-color: #fff;
     padding: 5px;
     width: 80px;
@@ -421,7 +421,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.button-adm:hover{
     background-color: #000;
     color: #fff;
 }
@@ -482,11 +482,15 @@ li{
 
 /* responsivo */
 
-@media(max-width: 720px){
+@media(max-width: 820px){
     #hb-map{
         display: block;
         cursor: pointer;
         margin: 20px;
+    }
+
+    #link, #codigo{
+        width: 100%;
     }
 }
 
@@ -505,12 +509,10 @@ label{
 
 #link, #codigo{
     width: 100%;
-    min-width: 250px;
 }
 
-@media(max-width: 720px){
+@media(max-width: 820px){
     .dados-map div{
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -570,6 +572,22 @@ input:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#btn-final-map{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    margin-top: 38px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#btn-final-map:hover{
+    background-color: rgb(36, 36, 36);
 }
 
 .mapa-img{
@@ -728,12 +746,19 @@ td, th{
     padding: 20px;
 }
 
-#lixeira {
+#lixeira1, #lixeira2 {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+  }
+
+  .button-imov{
+    border: none;
+    width: 40px;
+    background-color: #fff;
+    cursor: pointer;
   }
 
 
