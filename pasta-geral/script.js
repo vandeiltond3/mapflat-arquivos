@@ -13,7 +13,7 @@ menu = document.querySelector('.menu-addimvel')
 
 let show = true;
 
-function clique(){
+function cliques(){
 
     document.body.style.overflow = show ? "hidden" : "initial"
 
@@ -24,5 +24,29 @@ function clique(){
         tog.innerText = "close"
     }else{
         tog.innerText = "menu";
+    }
+}
+
+
+
+//demais menus
+
+togs = document.querySelector('.material-symbols-outlined')
+menus = document.querySelector('.menu-adm')
+
+
+let shows = true;
+
+function clique(){
+
+    document.body.style.overflow = shows ? "hidden" : "initial"
+
+    menus.classList.toggle('on', shows)
+    shows = !shows;
+
+    if(togs.innerText == "menu"){
+        togs.innerText = "close"
+    }else{
+        togs.innerText = "menu";
     }
 }
