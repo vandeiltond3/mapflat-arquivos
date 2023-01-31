@@ -8,58 +8,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-addimvel{
-    display: grid;
-    max-width: 1200px;
-    grid-template-areas: "menu title"
-                        "menu form"
-    
-}
-
-
-
-/* menu css*/
-
-
-
-.menu-addimvel{
-    grid-area: menu;
-    padding: 50px;
-}
-
-#hb-addimvel {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
 
 #hb-addimvel{
     display: none;
 }
 
-li{
-    list-style: none;
-    margin-bottom: 15px;
+.container-adm1{
+    margin-top: 44px;
 }
 
-.menu-addimvel a {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-}
 
-.menu-addimvel a:hover{
-    color: rgb(67, 33, 194);
-}
 
 .titulo-addimvel{
     grid-area: title;
-    margin-top: 50px;
+    margin-top: 23px;
     margin-left: 20px;
     font-size: 0.8em;
 }
@@ -70,10 +32,6 @@ li{
 
 
 
-.formulario-addimvel{
-    grid-area: form;
-    margin-right: 50px;
-}
 
 .form-adm > h2{
     font-size: 1.2em;
@@ -307,7 +265,7 @@ li{
     cursor: pointer;
 }
 
-.menu-amd a:hover{
+.menu-adm a:hover{
     color: rgb(67, 33, 194);
 }
 
@@ -446,9 +404,6 @@ td, th{
 /* menu css */
 
 
-.menu-map{
-    padding: 50px;
-}
 
 #hb-map {
   font-variation-settings:
@@ -465,15 +420,6 @@ td, th{
 li{
     list-style: none;
     margin-bottom: 15px;
-}
-
-.menu-map a {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
 }
 
 .menu-map a:hover{
@@ -519,23 +465,6 @@ label{
 
     .sessao-map{
         display: block;
-    }
-
-    .menu-map{
-        display: flex;
-        transition: 0.5s;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .menu-map.on{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        visibility: visible;
     }
 }
 
@@ -612,9 +541,7 @@ input:hover{
 
 /* menu css */
 
-.menu-imove{
-    padding: 50px;
-}
+
 
 #hb {
   font-variation-settings:
@@ -633,18 +560,6 @@ li{
     margin-bottom: 15px;
 }
 
-.menu-imove a {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.menu-imove a:hover{
-    color: rgb(67, 33, 194);
-}
 
 /* responsivo css */
 
@@ -676,24 +591,6 @@ select{
 
     .sessao-imove{
         display: block;
-    }
-    
-
-    .menu-imove{
-        display: flex;
-        transition: 0.5s;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .menu-imove.on{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        visibility: visible;
     }
 }
 
@@ -779,9 +676,6 @@ td, th{
 
 /* menu css */
 
-.menu-conta{
-    padding: 50px;
-}
 
 #hb-conta {
   font-variation-settings:
@@ -798,19 +692,6 @@ td, th{
 li{
     list-style: none;
     margin-bottom: 15px;
-}
-
-.menu-conta a {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.menu-conta a:hover{
-    color: rgb(67, 33, 194);
 }
 
 /* responsivo css */
@@ -841,23 +722,6 @@ input, select{
 
     .sessao-conta{
         display: block;
-    }
-
-    .menu-conta{
-        display: flex;
-        transition: 0.5s;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .menu-conta.on{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        visibility: visible;
     }
 }
 

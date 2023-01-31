@@ -9,155 +9,157 @@
     <title>MAPFLAT</title>
 </head>
 <body>
-    <main>
-        <section>
-            <div class="container-addimvel">
-                <span class="material-symbols-outlined" id="hb-addimvel" onclick="cliques()">
-                    menu
-                </span>
-                <div class="menu-addimvel">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Adicionar imóvel</a></li>
-                            <li><a href="#">Meus imóveis</a></li>
-                            <li><a href="#">Meu mapa</a></li>
-                            <li><a href="#">Minha conta</a></li>
-                            <li><a href="#">Administrativo</a></li>
-                        </ul>
-                    </nav>
+    <main class="main-adm">
+        <section class="sessao-adm">
+                <div class="menu-container">
+                    <span class="material-symbols-outlined" id="hb-adm" onclick="clique()">
+                        menu
+                    </span>
+                    <div class="menu-adm">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Adicionar imóvel</a></li>
+                                <li><a href="#">Meus imóveis</a></li>
+                                <li><a href="#">Meu mapa</a></li>
+                                <li><a href="#">Minha conta</a></li>
+                                <li><a href="#">Administrativo</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="titulo-addimvel"><h1>Adicionar imóvel</h1></div>
-                <div class="formulario-addimvel">
-                    <form class="form-adm" action="#" method="post" enctype="multipart/form-data">
-                        <h2>Dados do imóvel</h2>
-                        <div class="dados-do-imovel-addimvel">
+                <div class="container-adm1">
+                    <div class="titulo-addimvel">
+                        <h1>Adicionar imóvel</h1>
+                    </div>
+                    <div class="formulario-adm">
+                        <form class="form-adm" action="#" method="post" enctype="multipart/form-data">
+                            <h2>Dados do imóvel</h2>
+                            <div class="dados-do-imovel-addimvel">
+                                <div>
+                                    <label for="nome">Nome do imóvel*</label>
+                                    <input type="text" id="nome" required>
+                                </div>
+                                <div>
+                                    <label for="categoria">Categoria*</label>
+                                    <select name="categoria" id="categoria" required>
+                                        <option value="Residencial" selected>Residencial</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="tipo">Tipo*</label>
+                                    <select name="tipo" id="tipo" required>
+                                        <option value="Apartamento" selected>Apartamento</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="kichenette">Kichenette</option>
+                                        <option value="flat">Flat</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="objetivo">Objetivo*</label>
+                                    <select name="objetivo" id="objetivo" required>
+                                        <option value="alugar" selected>Alugar</option>
+                                        <option value="vender">Vender</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="quartos">Quartos*</label>
+                                    <select name="quartos" id="quartos" required>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="banheiros">Banheiros*</label>
+                                    <select name="banheiros" id="banheiros" required>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="vagas">Vagas na garagem*</label>
+                                    <select name="vagas" id="vagas" required>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="tamanho">Tamanho (m2)*</label>
+                                    <input type="number" id="tamanho" required>
+                                </div>
+                                <div>
+                                    <label for="valor">Valor (R$)*</label>
+                                    <input type="number" id="valor">
+                                </div>
+                            </div>
+                            <h2>Endereço do imóvel</h2>
+                            <div class="endereco-do-imovel-addimvel">
+                                <div>
+                                    <label for="estado">Estado*</label>
+                                    <select name="estado" id="estado" required>
+                                        <option value="ac" selected>AC</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="cidade">Cidade*</label>
+                                    <select name="cidade" id="cidade" required>
+                                        <option value="luz" selected>Luz</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="kichenette">Kichenette</option>
+                                        <option value="flat">Flat</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="logradouro">Logradouro*</label>
+                                    <input type="text" id="logradouro" required>
+                                </div>
+                                <div>
+                                    <label for="numero">Número*</label>
+                                    <input type="text" id="numero" required>
+                                </div>
+                                <div>
+                                    <label for="valor">Bairro*</label>
+                                    <input type="text" id="valor">
+                                </div>
+                                <div>
+                                    <label for="cep">CEP*</label>
+                                    <input type="number" id="cep">
+                                </div>
+                            </div>
+                            <h2>Fotos do imóvel</h2>
+                            <div class="fotos-do-imovel-addimvel">
+                                <div class="file">
+                                    <label for="pic3" id="pic-c">Enviar Foto +</label>
+                                    <input type="file" name="pic3" id="pic3">
+                                </div>
+                                <div class="file">
+                                    <label for="pic2" id="pic-b">Eviar Foto +</label>
+                                    <input type="file" name="pic2" id="pic2">
+                                </div>
+                                <div class="file">
+                                    <label for="pic" id="pic-a">Enviar foto +</label>
+                                    <input type="file" name="pic" id="pic" accept="image/*">
+                                </div>
+                            </div>
+                            <h2>Descrição do imóvel</h2>
                             <div>
-                                <label for="nome">Nome do imóvel*</label>
-                                <input type="text" id="nome" required>
+                                <textarea name="descricao" id="descricao" maxlength="400" rows="10" placeholder="Limite de 50 palavras" style="width: 94%; padding: 10px;"></textarea>
                             </div>
-                            <div>
-                                <label for="categoria">Categoria*</label>
-                                <select name="categoria" id="categoria" required>
-                                    <option value="Residencial" selected>Residencial</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="tipo">Tipo*</label>
-                                <select name="tipo" id="tipo" required>
-                                    <option value="Apartamento" selected>Apartamento</option>
-                                    <option value="casa">Casa</option>
-                                    <option value="kichenette">Kichenette</option>
-                                    <option value="flat">Flat</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="objetivo">Objetivo*</label>
-                                <select name="objetivo" id="objetivo" required>
-                                    <option value="alugar" selected>Alugar</option>
-                                    <option value="vender">Vender</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="quartos">Quartos*</label>
-                                <select name="quartos" id="quartos" required>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="banheiros">Banheiros*</label>
-                                <select name="banheiros" id="banheiros" required>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="vagas">Vagas na garagem*</label>
-                                <select name="vagas" id="vagas" required>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-            
-                            <div>
-                                <label for="tamanho">Tamanho (m2)*</label>
-                                <input type="number" id="tamanho" required>
-                            </div>
-                            <div>
-                                <label for="valor">Valor (R$)*</label>
-                                <input type="number" id="valor">
-                            </div>
-                        </div>
-                        <h2>Endereço do imóvel</h2>
-                        <div class="endereco-do-imovel-addimvel">
-                            <div>
-                                <label for="estado">Estado*</label>
-                                <select name="estado" id="estado" required>
-                                    <option value="ac" selected>AC</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="cidade">Cidade*</label>
-                                <select name="cidade" id="cidade" required>
-                                    <option value="luz" selected>Luz</option>
-                                    <option value="casa">Casa</option>
-                                    <option value="kichenette">Kichenette</option>
-                                    <option value="flat">Flat</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="logradouro">Logradouro*</label>
-                                <input type="text" id="logradouro" required>
-                            </div>
-            
-                            <div>
-                                <label for="numero">Número*</label>
-                                <input type="text" id="numero" required>
-                            </div>
-                            <div>
-                                <label for="valor">Bairro*</label>
-                                <input type="text" id="valor">
-                            </div>
-                            <div>
-                                <label for="cep">CEP*</label>
-                                <input type="number" id="cep">
-                            </div>
-                        </div>
-                        <h2>Fotos do imóvel</h2>
-                        <div class="fotos-do-imovel-addimvel">
-                            <div class="file">
-                                <label for="pic3" id="pic-c">Enviar Foto +</label>
-                                <input type="file" name="pic3" id="pic3">
-                            </div>
-                            <div class="file">
-                                <label for="pic2" id="pic-b">Eviar Foto +</label>
-                                <input type="file" name="pic2" id="pic2">
-                            </div>
-                            <div class="file">
-                                <label for="pic" id="pic-a">Enviar foto +</label>
-                                <input type="file" name="pic" id="pic" accept="image/*">
-                            </div>
-                        </div>
-                        <h2>Descrição do imóvel</h2>
-                        <div>
-                            <textarea name="descricao" id="descricao" maxlength="400" rows="10" placeholder="Limite de 50 palavras" style="width: 94%; padding: 10px;"></textarea>
-                        </div>
-                        <input type="submit" value="Adicionar" id="bt-final">
-                    </form>
+                            <input type="submit" value="Adicionar" id="bt-final">
+                        </form>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
     <script src="script.js"></script>
