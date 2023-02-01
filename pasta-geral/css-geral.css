@@ -428,6 +428,12 @@ li{
 
 /* responsivo */
 
+@media(max-width: 920px){
+    .sessao-map{
+        display: block;
+    }
+}
+
 @media(max-width: 820px){
     #hb-map{
         display: block;
@@ -563,11 +569,27 @@ li{
 
 /* responsivo css */
 
+@media(max-width: 920px){
+    #hb{
+        display: block;
+        cursor: pointer;
+        margin: 15px;
+    }
+
+    .sessao-imove{
+        display: block;
+    }
+}
+
 @media(max-width: 720px){
     #hb{
         display: block;
         cursor: pointer;
         margin: 15px;
+    }
+
+    .tabela-imove{
+        overflow-x: scroll;
     }
 }
 
