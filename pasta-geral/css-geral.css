@@ -785,3 +785,50 @@ input:hover{
 #btn-final:hover{
     background-color: rgb(73, 73, 73);
 }
+
+
+
+
+
+/* login tela */
+
+
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.login-container{
+    max-width: 380px;
+    min-width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#btm-final{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+
+
+
+/* tela pos criar conta */
+
+
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 500px;
+}
