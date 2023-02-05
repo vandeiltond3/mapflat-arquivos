@@ -67,7 +67,7 @@ function selecionou(){
     if(valor === 'comercial'){
         tipo.disabled = true
 }else{
-    tipo.style.display = 'block'
+    tipo.disabled = false
 }
 
 }
