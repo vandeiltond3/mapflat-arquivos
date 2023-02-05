@@ -33,22 +33,42 @@ uf.addEventListener('change', async function(){
     const request = await fetch(urlCidades)
     const response = await request.json()
 
-    let options = ''
+    let optionsi = ''
+
     response.forEach(function(cidades){
-    options += '<option>'+cidades.nome+'</option>'
+    optionsi += '<option>'+cidades.nome+'</option>'
     })
-    cidade.innerHTML = options
+    cidade.innerHTML = optionsi
 })    
 
 window.addEventListener('load', async ()=>{
     const request = await fetch(urlUF)
     const response = await request.json()
 
-    const options = document.createElement('optgroup')
-    options.setAttribute('label', 'UFs')
+    const optionsi = document.createElement('optgroup')
+    optionsi.setAttribute('label', 'UFs')
     response.forEach(function(uf){
-        options.innerHTML += '<option>'+uf.sigla+'</option>'
+        optionsi.innerHTML += '<option>'+uf.sigla+'</option>'
     })
 
-    uf.append(options)
+    uf.append(optionsi)
 })
+
+
+// select de categoria
+
+const tipo = document.querySelector('#tipo')
+
+
+function selecionou(){
+    const select = document.querySelector('#categoria')
+    const valor = select.options[select.selectedIndex].value
+    
+    if(valor === 'comercial'){
+        tipo.disabled = true
+}else{
+    tipo.style.display = 'block'
+}
+
+}
+selecionou()
