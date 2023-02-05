@@ -863,6 +863,7 @@ input:hover{
 
 .controle{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
