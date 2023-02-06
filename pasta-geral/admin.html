@@ -54,7 +54,7 @@
                             <td>Imobiliaria 1</td>
                             <td>Grátis</td>
                             <td>adriano.614@gmail.com</td>
-                            <td><button class="button-adm" onclick="copiar()">Copiar</button></td>
+                            <td><button class="button-adm" id="copy-button">Copiar</button></td>
                             <td><button class="button-adm">Editar</button></td>
                             <td><button class="button-adm">Abrir</button></td>
                             <td><button class="button-adm">Pendente</button></td>
@@ -63,7 +63,7 @@
                             <td>Imobiliaria 2</td>
                             <td>Grátis</td>
                             <td>adriano.614@gmail.com</td>
-                            <td><button class="button-adm" onclick="copiar()">Copiar</button></td>
+                            <td><button class="button-adm" id="copy-button">Copiar</button></td>
                             <td><button class="button-adm">Editar</button></td>
                             <td><button class="button-adm">Abrir</button></td>
                             <td><button class="button-adm">Ativo</button></td>
@@ -74,5 +74,18 @@
         </section>
     </main>
     <script src="script.js"></script>
+    <script>
+        
+        const copyButton = document.querySelector('#copy-button');
+
+        copyButton.addEventListener('click', ()=>{
+            const textArea = document.createElement('textarea');
+            textArea.value = 'texto copiado';
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            textArea.remove();
+        });
+    </script>
 </body>
 </html>

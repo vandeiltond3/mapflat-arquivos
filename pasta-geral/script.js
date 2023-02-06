@@ -75,10 +75,3 @@ selecionou()
 
 
 // função do botão copiar da pagina administrativa
-
-function copiar(){
-    let textoCopiado = document.querySelector('');
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999)
-    document.execCommand('copy');
-}
