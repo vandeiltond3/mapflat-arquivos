@@ -925,3 +925,35 @@ input:hover{
     color: #000;
     border: 1px solid #000;
 }
+
+
+
+/* tela de login email e senha */
+
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.emailSenha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.borda{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#btm-login{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+}
